@@ -1,8 +1,4 @@
 import numpy as np
 
 def matrix_trace(A):
-    n = len(A)
-    sum = 0
-    for i in range(n):
-        sum += A[i][i]
-    return sum
+    return sum(A[i][i] for i in range(len(A)))
